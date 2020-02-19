@@ -1,0 +1,1 @@
+"# scshop-config-service" 
