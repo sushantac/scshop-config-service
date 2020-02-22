@@ -25,20 +25,6 @@ node{
         sh label: '', script: 'docker push sushantac/config-service:0.0.1'
     }
 
-    stage('Run container on Dev server'){
-        try{
-            sh label: '', script: 'docker stop config-service'
-        } catch(all) {
-
-        }
-        
-        try{
-            sh label: '', script: 'docker rm config-service'
-        } catch(all) {
-
-        }
-
-        sh label: '', script: 'docker run -d -p 8011:8011 --name config-service sushantac/config-service:0.0.1'
-    }
+   
     
 }
